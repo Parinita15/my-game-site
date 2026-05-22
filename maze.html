@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Rage Maze 💀</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="game-container">
+
+  <h1>💀 Rage Maze</h1>
+  <p>don’t touch the walls… seriously 😭</p>
+
+  <canvas id="mazeCanvas"></canvas>
+
+  <!-- WIN SCREEN -->
+  <div id="winScreen" class="overlay" style="display:none;">
+    <div class="popup">
+      <h2>💖 You made it</h2>
+      <img src="images/couple.png" style="width:200px;border-radius:12px;" />
+      <p>somehow… you survived the maze</p>
+      <button onclick="restartMaze()">🔁 Try Again</button>
+      <button onclick="goHome()">🏠 Arcade</button>
+    </div>
+  </div>
+
+  <div id="failPopup" class="overlay" style="display:none;">
+  <div class="popup">
+    <h2>💀 Oops!</h2>
+    <img src="images/couple.png" style="width:200px;border-radius:12px;" />
+    <p>you touched the wall 😭</p>
+    <button onclick="document.getElementById('failPopup').style.display='none'">
+      ok retry 😤
+    </button>
+  </div>
+</div>
+</div>
+
+<script src="maze.js"></script>
+</body>
+</html>

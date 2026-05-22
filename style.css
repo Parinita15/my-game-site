@@ -1,0 +1,203 @@
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #ffb6c1, #c084fc);
+  color: white;
+  text-align: center;
+}
+
+.container {
+  padding: 40px;
+}
+
+h1 {
+  font-size: 40px;
+  margin-bottom: 5px;
+}
+
+.subtitle {
+  opacity: 0.9;
+  margin-bottom: 30px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 220px);
+  gap: 20px;
+  justify-content: center;
+}
+
+.game-card {
+  background: rgba(255,255,255,0.2);
+  border: none;
+  padding: 20px;
+  border-radius: 15px;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.2s;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  backdrop-filter: blur(8px);
+}
+
+.game-card span {
+  font-size: 12px;
+  opacity: 0.8;
+}
+
+.game-card:hover {
+  transform: scale(1.05);
+  background: rgba(255,255,255,0.3);
+}
+
+.footer {
+  margin-top: 40px;
+  font-size: 12px;
+  opacity: 0.7;
+}
+
+.game-container {
+  padding: 20px;
+}
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(4, 90px);
+  gap: 10px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.card {
+  width: 90px;
+  height: 90px;
+  background: rgba(255,255,255,0.25);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hidden {
+  font-size: 22px;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.matched {
+  background: rgba(0, 255, 150, 0.3);
+  cursor: default;
+}
+
+
+
+canvas {
+  background: radial-gradient(circle, #1a1a2e, #000);
+  display: block;
+  margin: 20px auto;
+  border-radius: 12px;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.7);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.popup {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  text-align: center;
+  color: black;
+}
+
+
+
+
+.story-box {
+  width: 80%;
+  margin: 20px auto;
+  padding: 20px;
+  background: #111;
+  color: white;
+  border-radius: 12px;
+  font-size: 18px;
+  min-height: 120px;
+}
+
+#choices button {
+  display: block;
+  margin: 10px auto;
+  padding: 10px 20px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  background: hotpink;
+  color: white;
+}
+
+
+
+
+
+
+canvas {
+  display: block;
+  margin: 20px auto;
+  border-radius: 12px;
+}
+
+/* ACHIEVEMENTS */
+.achievement {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background: gold;
+  color: black;
+  padding: 15px;
+  border-radius: 10px;
+  font-weight: bold;
+  animation: popin 0.4s;
+}
+
+.hidden {
+  display: none;
+}
+
+@keyframes popin {
+  from { transform: scale(0); }
+  to { transform: scale(1); }
+}
+
+
+
+
+canvas {
+  width: 500px;
+  height: 600px;
+  display: block;
+  margin: 20px auto;
+  background: #111;
+  border-radius: 12px;
+}

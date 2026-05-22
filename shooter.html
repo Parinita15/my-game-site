@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Love Core Defense 🚀💖</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div class="game-container">
+
+    <h1>🚀 Love Core Defense 💖</h1>
+    <p>Protect the love core from chaos 😭</p>
+
+    <canvas id="gameCanvas"></canvas>
+
+    <p id="score">Score: 0 | Shield: 50</p>
+
+    <!-- START SCREEN -->
+    <div id="startScreen" class="overlay">
+      <div class="popup">
+        <h2>🚀 Love Core Defense</h2>
+
+        <p>💖 Protect the love core</p>
+        <p>⬅️ ➡️ Move</p>
+        <p>SPACE = shoot hearts 💕</p>
+        <p>Avoid asteroids ☄️</p>
+
+        <button onclick="startGame()">▶️ Start</button>
+      </div>
+    </div>
+
+    <!-- GAME OVER SCREEN -->
+    <div id="gameOverScreen" class="overlay" style="display:none;">
+      <div class="popup">
+        <h2>💀 You lost!</h2>
+        <p id="finalScore"></p>
+
+        <button onclick="restartGame()">🔁 Restart</button>
+        <button onclick="goHome()">🏠 Back to Arcade</button>
+      </div>
+    </div>
+
+  </div>
+
+  <script src="shooter.js"></script>
+</body>
+</html>
